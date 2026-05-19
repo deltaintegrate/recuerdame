@@ -1,0 +1,60 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: recuerdame_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-recuerdame}
+      POSTGRES_USER: ${POSTGRES_USER:-recuerdame}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-recuerdame123}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./packages/shared/src/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-recuerdame} -d ${POSTGRES_DB:-recuerdame}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  webhook:
+    build:
+      context: .
+      dockerfile: packages/webhook/Dockerfile
+    container_name: recuerdame_webhook
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      POSTGRES_HOST: postgres
+    volumes:
+      - ./packages/shared/src:/app/packages/shared/src
+      - ./packages/webhook/src:/app/packages/webhook/src
+    command: node --watch packages/webhook/src/index.js
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: packages/scheduler/Dockerfile
+    container_name: recuerdame_scheduler
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      POSTGRES_HOST: postgres
+    volumes:
+      - ./packages/shared/src:/app/packages/shared/src
+      - ./packages/scheduler/src:/app/packages/scheduler/src
+    command: node --watch packages/scheduler/src/index.js
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
