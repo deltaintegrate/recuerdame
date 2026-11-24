@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuérdame — Pedidos, cobros y clientes de tu marca de ropa, por WhatsApp</title>
+  <meta name="description" content="Recuérdame es el software para mayoristas y almacenes de ropa: toma pedidos, cobra cartera y avisa nuevas colecciones por WhatsApp, sin perseguir a nadie.">
+  <meta property="og:title" content="Recuérdame — el software de las marcas de ropa que venden por WhatsApp">
+  <meta property="og:description" content="Pedidos mayoristas, cartera, separados y lanzamientos de colección, con recordatorios automáticos por WhatsApp.">
+  <meta name="theme-color" content="#2F4FD8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="logo" href="#" aria-label="Recuérdame, inicio">
+      <svg class="logo__mark" viewBox="280 240 420 560" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="66"><path d="M348 297V757"/><circle cx="522" cy="450" r="153"/><path d="M505 606L634 757"/></g><path d="M530 376V442H580" fill="none" stroke="currentColor" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>recuérdame</span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav__links">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#tallas">Mayorista o minorista</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--small" data-wa href="#">Pedir una demo</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="hero__kicker">Software para marcas, mayoristas y almacenes de ropa</p>
+        <h1 class="hero__title">Tus clientes compran.<br>Recuérdame les recuerda.</h1>
+        <p class="hero__lede">Toma pedidos al por mayor, cobra la cartera y avisa cada colección nueva por WhatsApp. Los recordatorios salen solos; tú te dedicas a vender.</p>
+        <div class="hero__actions">
+          <a class="btn" data-wa href="#">Pedir una demo por WhatsApp</a>
+          <a class="link" href="#como-funciona">Ver cómo funciona</a>
+        </div>
+        <p class="hero__note">14 días gratis. Sin tarjeta. Te lo dejamos configurado.</p>
+      </div>
+
+      <div class="hero__tag" aria-label="Ejemplo de recordatorio que envía Recuérdame">
+        <svg class="tag__string" viewBox="0 0 120 140" aria-hidden="true"><path d="M60 0 C 30 40, 90 70, 60 132" fill="none" stroke="#1A1D2E" stroke-width="1.6"/></svg>
+        <article class="tag">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <header class="tag__head">
+            <span class="tag__brand">recuérdame</span>
+            <span class="tag__ref">Pedido 0482</span>
+          </header>
+          <p class="tag__to">Para: Almacén Doña Marta · Pereira</p>
+          <div class="bubble">
+            <p>Hola Marta 👋 Tu pedido de <b>48 jeans tiro alto</b> (tallas 6 a 16) ya está empacado.</p>
+            <p>Saldo pendiente: <b>$1.240.000</b>. ¿Te lo despachamos mañana por Servientrega?</p>
+            <span class="bubble__time">9:02 a. m. ✓✓</span>
+          </div>
+          <div class="tag__replies" aria-hidden="true">
+            <span>Sí, despachen</span><span>Pagar ahora</span>
+          </div>
+          <footer class="tag__foot">
+            <dl>
+              <div><dt>Tallas</dt><dd>6 · 8 · 10 · 12 · 14 · 16</dd></div>
+              <div><dt>Enviado</dt><dd>Automático</dd></div>
+            </dl>
+          </footer>
+        </article>
+      </div>
+    </div>
+    <div class="tape" aria-hidden="true"></div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="pain">
+    <div class="wrap pain__grid">
+      <h2 class="h2">Vender ropa por WhatsApp funciona. Llevar la cuenta, no tanto.</h2>
+      <ul class="pain__list">
+        <li><strong>Pedidos perdidos en el chat.</strong> El cliente mandó tallas y colores en cinco audios y tres fotos.</li>
+        <li><strong>Cartera que nadie cobra.</strong> Da pena escribirle otra vez al cliente que debe desde hace 40 días.</li>
+        <li><strong>Separados que no vuelven.</strong> La prenda queda apartada en bodega y el cliente se olvida.</li>
+        <li><strong>Colecciones que salen en silencio.</strong> Subes la foto al estado y solo la ven los de siempre.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="how" id="como-funciona">
+    <div class="wrap">
+      <h2 class="h2">Listo en una tarde</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__n" aria-hidden="true">1</span>
+          <h3>Conecta tu WhatsApp</h3>
+          <p>Usamos la API oficial de WhatsApp Business. Tu número de siempre, sin celular prendido en la bodega.</p>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">2</span>
+          <h3>Sube catálogo y clientes</h3>
+          <p>Referencias, tallas, colores y precios por mayor y al detal. Importa tus clientes desde Excel en un clic.</p>
+        </li>
+        <li class="step">
+          <span class="step__n" aria-hidden="true">3</span>
+          <h3>Recuérdame hace el seguimiento</h3>
+          <p>Confirma pedidos, avisa despachos, cobra saldos y anuncia colecciones. Tú solo respondes lo que necesita una persona.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TABLA DE TALLAS -->
+  <section class="sizes" id="tallas">
+    <div class="wrap">
+      <div class="sizes__head">
+        <h2 class="h2">Una talla para cada negocio</h2>
+        <p class="sizes__lede">El mismo sistema se ajusta a cómo vendes. Mira qué hace por ti.</p>
+      </div>
+      <div class="chart" role="region" aria-label="Comparación mayorista y minorista" tabindex="0">
+        <table>
+          <caption class="sr-only">Qué hace Recuérdame para mayoristas y minoristas</caption>
+          <thead>
+            <tr>
+              <th scope="col">Lo que necesitas</th>
+              <th scope="col"><span class="size">M</span> Mayorista</th>
+              <th scope="col"><span class="size">D</span> Al detal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Tomar pedidos</th><td>Pedidos por curva de tallas y docenas, con precio por volumen</td><td>Pedidos por prenda, talla y color desde el catálogo</td></tr>
+            <tr><th scope="row">Cobrar</th><td>Recordatorios de cartera a 30, 45 y 60 días con link de pago</td><td>Saldos de separados y abonos con fecha límite</td></tr>
+            <tr><th scope="row">Avisar</th><td>Preventa de colección a tus clientes por ciudad</td><td>Llegó tu talla, nueva colección y fechas especiales</td></tr>
+            <tr><th scope="row">Inventario</th><td>Reservas por pedido para no vender dos veces lo mismo</td><td>Stock por tienda y alertas de agotado</td></tr>
+            <tr><th scope="row">Volver a vender</th><td>Te avisa qué cliente lleva 60 días sin pedir</td><td>Recompra para clientas que compraron hace 3 meses</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANZAMIENTOS -->
+  <section class="feature">
+    <div class="wrap feature__grid">
+      <div class="feature__copy">
+        <h2 class="h2">Lanza la colección el lunes. Recuérdame la vende toda la semana.</h2>
+        <p>Programa el lanzamiento con fotos y precios. Recuérdame lo envía a los clientes correctos, recoge los pedidos en el chat y les recuerda a quienes preguntaron y no compraron.</p>
+        <ul class="ticks">
+          <li>Segmentos por ciudad, tipo de cliente y última compra</li>
+          <li>Pedidos que llegan ordenados por referencia y talla</li>
+          <li>Reporte de lo vendido por campaña</li>
+        </ul>
+      </div>
+      <div class="phone" aria-label="Ejemplo de conversación de lanzamiento">
+        <div class="phone__bar"><span class="phone__avatar">R</span><span><b>Confecciones Aurora</b><small>Cuenta de empresa</small></span></div>
+        <div class="phone__chat">
+          <div class="msg msg--in"><span class="msg__img" aria-hidden="true"></span>Llegó la colección <b>Temporada Seca</b> 🌞 Lino y algodón, tallas S a XL. Precio mayorista desde 12 unidades.</div>
+          <div class="msg msg--out">Me interesa la camisa de lino en beige y blanco, una curva de cada una</div>
+          <div class="msg msg--in">Listo ✅ Pedido 0517: 2 curvas (S·M·L·XL) de camisa de lino. Total $864.000. ¿Lo confirmo?</div>
+          <div class="msg msg--out">Sí, confirmo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section class="plans" id="planes">
+    <div class="wrap">
+      <h2 class="h2">Planes en pesos, sin permanencia</h2>
+      <div class="plans__grid">
+        <article class="plan">
+          <h3 class="plan__name">Taller</h3>
+          <p class="plan__for">Para quien empieza a vender su marca</p>
+          <p class="plan__price"><span>$89.000</span> / mes</p>
+          <ul>
+            <li>Hasta 300 clientes</li>
+            <li>Catálogo y pedidos por WhatsApp</li>
+            <li>Recordatorios de separados y saldos</li>
+          </ul>
+          <a class="btn btn--ghost" data-wa href="#">Empezar con Taller</a>
+        </article>
+        <article class="plan plan--main">
+          <p class="plan__flag">El que más eligen</p>
+          <h3 class="plan__name">Almacén</h3>
+          <p class="plan__for">Para tiendas y marcas con equipo de ventas</p>
+          <p class="plan__price"><span>$189.000</span> / mes</p>
+          <ul>
+            <li>Hasta 2.000 clientes y 3 vendedores</li>
+            <li>Campañas de colección segmentadas</li>
+            <li>Cartera con link de pago</li>
+            <li>Inventario por tienda</li>
+          </ul>
+          <a class="btn" data-wa href="#">Empezar con Almacén</a>
+        </article>
+        <article class="plan">
+          <h3 class="plan__name">Mayorista</h3>
+          <p class="plan__for">Para fábricas y distribuidoras</p>
+          <p class="plan__price"><span>$389.000</span> / mes</p>
+          <ul>
+            <li>Clientes y vendedores ilimitados</li>
+            <li>Pedidos por curva y listas de precio</li>
+            <li>Cobro de cartera por edades</li>
+            <li>Integración con tu facturación</li>
+          </ul>
+          <a class="btn btn--ghost" data-wa href="#">Hablar con ventas</a>
+        </article>
+      </div>
+      <p class="plans__note">Precios antes de IVA. El costo de los mensajes de WhatsApp lo cobra Meta aparte y te lo mostramos claro en tu cuenta.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="preguntas">
+    <div class="wrap faq__grid">
+      <h2 class="h2">Preguntas frecuentes</h2>
+      <div class="faq__list">
+        <details>
+          <summary>¿Puedo seguir usando mi número de WhatsApp?</summary>
+          <p>Sí. Lo pasamos a WhatsApp Business API y sigues atendiendo desde el panel de Recuérdame, en computador o celular, con varios vendedores a la vez.</p>
+        </details>
+        <details>
+          <summary>¿Mis clientes van a sentir que les escribe un robot?</summary>
+          <p>Los mensajes los escribes tú, con tu tono. Recuérdame solo decide cuándo enviarlos y te pasa la conversación cuando el cliente pregunta algo distinto.</p>
+        </details>
+        <details>
+          <summary>¿Sirve si vendo en San Victorino, El Hueco o por catálogo?</summary>
+          <p>Sí. Funciona igual para local físico, venta por catálogo y vendedores en ruta. Cada pedido queda registrado con su vendedor.</p>
+        </details>
+        <details>
+          <summary>¿Cómo cobro con link de pago?</summary>
+          <p>Conectamos tu pasarela (Wompi, Bold o Mercado Pago) y el recordatorio de cartera lleva el link con el valor exacto que debe el cliente.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si quiero cancelar?</summary>
+          <p>Cancelas cuando quieras desde tu cuenta. Te llevas tus clientes y pedidos en Excel.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap final__inner">
+      <h2 class="final__title">Que ningún pedido se quede en visto.</h2>
+      <p>Escríbenos y en 20 minutos te mostramos Recuérdame con tu propio catálogo.</p>
+      <a class="btn btn--light" data-wa href="#">Pedir una demo por WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span class="logo logo--small"><svg class="logo__mark" viewBox="280 240 420 560" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="66"><path d="M348 297V757"/><circle cx="522" cy="450" r="153"/><path d="M505 606L634 757"/></g><path d="M530 376V442H580" fill="none" stroke="currentColor" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/></svg> recuérdame</span>
+    <p>Hecho en Pereira, Colombia, para la industria de la moda.</p>
+    <p>© <span id="year">2026</span> Recuérdame</p>
+  </div>
+</footer>
+
+<script>
+  // Cambia este número por el WhatsApp de ventas (formato internacional, sin + ni espacios).
+  const WHATSAPP = "57XXXXXXXXXX";
+  const MSG = encodeURIComponent("Hola, quiero una demo de Recuérdame para mi negocio de ropa.");
+  document.querySelectorAll("[data-wa]").forEach(a => {
+    a.href = `https://wa.me/${WHATSAPP}?text=${MSG}`;
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
